@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<!-- About Christian Mesa.. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Qt,c++,cpp,java,Acoustic,
+              CadnaA,INM,Aircraft,Noise,HTML,CSS,Matlab,Linux,Debian,JavaScript
+              computer,networks,GIS,Asterix,ADS-B,radar,">
+        <title>Christian Mesa</title>
+        
+        <!-- CSS3 embeded code -->
+      <style type = "text/css">
+
+         h1       { font-family: tahoma, helvetica, sans-serif;}
+         p        { font-size: 12pt; text-align: justify; font-family: arial, sans-serif;  }
+         
+         img#myPhoto { /* con # afectamos sólo al elemento con el  id="myPhoto"*/
+                         display: block;
+                         margin-left: auto;
+                         margin-right: auto; 
+                        }
+                        
+        .centerText{ text-align: center;}                           
+        
+        .showMyBox{ 
+            
+           /*       border-style: solid; 
+                    border-style: solid;
+                    border-width: thin;
+                    border-color: black;
+           */
+        }         
+        /* Links change their appearance when the user hovers the mouse over them*/
+        a:hover{ font-weight: bold; text-decoration: none}
+        
+        meter.skills { 
+            width: 90%;  
+        }
+
+        div.flex-container {
+            display: -webkit-flex;
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+
+        }
+
+        p.flex-item {
+            background-color: rgba(0, 0, 0, 0); /*transparente*/
+            width: 100%;
+        }
+
+        /* background color change depending if the page is show in any media, or 
+           on a printed page */
+        @media all
+        {
+            /*body  { background-color: #cccccc; }*/                       
+            body{
+                background: -webkit-radial-gradient(top right,  #808080, white);
+                background: -moz-radial-gradient(top right,  #808080, white);
+                background: radial-gradient(top right,  #808080, white);
+            }
+                        
+            p     { font-size: 12pt;
+                    font-family: arial, sans-serif; 
+        } 
+        @media print
+        {
+            body  { background-color: white; }
+            p     { font-size: 14pt;
+                    font-family: "times new roman", times, serif; }
+        }      
+      </style>      
+    
+    </head>
+    <body class = "showMyBox">
+        <header class = "showMyBox"> <!-- header element creates a header for the page -->
+                        
+            <h1 id="top" class="centerText">CHRISTIAN CAMILO MESA V.</h1>
+            <h2 class="centerText"> Acoustic engineer and developer </h2>
+            <address class="centerText">
+                <a href = "mailto:ing.cmesa@gmail.com"> ing.cmesa@gmail.com</a>
+            </address><br>
+            <img id="myPhoto" class = "showMyBox" src = "myResources/fotoPersonal.JPG" alt = "Retrato Christian Mesa" height="200" width="200" />
+            <time><br>2017-04-06</time> 
+        </header>
+        
+
+        <section id = "1" class = "showMyBox"> <!-- Begin section 1 -->
+            <p>
+                <b>Christian</b> is an independent computer programmer,  specializing 
+                in <b>C++/Qt</b> cross-platform application framework, <b>HTML5</b>,
+                <b>CSS3</b> and <b>JavaScript</b> web technologies, 
+                computer areas involving  <b>Linux</b> operating system, 
+                <b>Java SE</b>, <b>Matlab</b>, <b>Python</b>, software for 
+                environmental noise prediction  <b>cadnaA</b> and open source 
+                Geographic Information Systems <b>Qgis</b>.
+
+                <br><br>Christian is passionate about aviation topics such as aircraft 
+                noise modeling, aerodynamics and air traffic surveillance technologies.
+            </p> 
+        </section>
+
+        <section id = "2" class = "showMyBox"> <!-- Begin section 1 -->
+            
+                <h2> Recent Publications and jobs</h2>
+                <ul>
+                    <li><a href = "http://www.fia2014.cl/">
+                            Assessment and noise management in Colombian airports 
+                            <br>(Evaluación y gestión del ruido en aeropuertos 
+                            colombianos)</a></li><br> 
+                            
+                    <li><a href = "https://qgiscloud.com/christian_m/Base_Datos_Espacial_Restr">
+                            Noise Mapping in Secretary of Environment 
+                            Protection - Bogota Colombia.</a></li><br>                             
+
+                    <li><a href = "http://bibliotecadigital.usb.edu.co/handle/10819/1985">
+                            Software for measuring acoustic parameters in enclosed
+                            spaces according to ISO 3382 and spectral compensation  
+                            <br>(Sistema de medición de parámetros acústicos en 
+                            recintos y compensación espectral)</a></li><br>  
+
+                    <li><a href = "https://www.fceia.unr.edu.ar/acustica/biblio/actasadaa2009.htm">
+                            Records of the first days of acoustic AdAA 2009
+                            <br>(Actas de las primeras jornadas de acústica AdAA 2009)</a></li><br> 
+                            
+                    <li><a href = "http://www.eltiempo.com/bogota/niveles-de-ruido-en-la-carrera-septima-28717">
+                            Acoustic model and strategic noise map in the central
+                            zone of Bogota capital city of Colombia
+                            <br>(Modelo acústico y mapa estratégico de ruido en 
+                            zona central de la ciudad de Bogotá - capital de colombia)</a></li>
+                </ul>
+            
+        </section>
+        
+        <section id = "3" class = "showMyBox">             
+            <h2>Computer Skills</h2>
+
+            <div class="showMyBox flex-container">
+                <p class="flex-item centerText showMyBox"><b>C++ and Qt</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "90"></meter> 90%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>Java SE</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "75"></meter> 75%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>Python</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "15"></meter> 15%
+                </p>                
+            </div>
+
+            <div class="showMyBox flex-container">                
+                <p class="flex-item centerText showMyBox"><b>HTML5</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "55"></meter> 55%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>CSS3</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "55"></meter> 55%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>JavaScript</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "5"></meter> 05%
+                </p>
+            </div>
+
+            <div class="showMyBox flex-container">
+                
+                <p class="flex-item centerText showMyBox"><b>Linux OS (Debian)</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "65"></meter> 65%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>Shell</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "55"></meter> 55%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>Windows Server</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "65"></meter> 65%
+                </p>
+            </div>
+
+            <div class="showMyBox flex-container">
+                <p class="flex-item centerText showMyBox"><b>Matlab</b><br>
+                    <meter class="skills" min = "0" max = "100" value = "75"></meter> 75%
+                </p>
+                <p class="flex-item centerText showMyBox"><b>Qgis</b><br>
+                <meter class="skills" min = "0" max = "100" value = "80"></meter> 80%
+                </p>                
+                <p class="flex-item centerText showMyBox"><b>Office</b><br>
+                <meter class="skills" min = "0" max = "100" value = "70"></meter> 70%
+                </p>
+            </div>
+            <p style="text-align: right;"><a href="#top">Jump to the top the page.</a></p>
+        </section>
+
+
+        <!-- contact author and copyright.-->
+        <footer class = "showMyBox">            
+            <h6>&copy; All Rights <wbr>Reserved.<h6>            
+            <address >
+                Contact at <a href = "mailto:ing.cmesa@gmail.com">ing.cmesa@gmail.com</a>
+            </address>            
+        </footer>
+        
+    </body>
+</html>
