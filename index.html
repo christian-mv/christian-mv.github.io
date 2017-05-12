@@ -9,69 +9,8 @@
               computer,networks,GIS,Asterix,ADS-B,radar,">
         <title>Christian Mesa</title>
         
-        <!-- CSS3 embeded code -->
-      <style type = "text/css">
-
-         h1       { font-family: tahoma, helvetica, sans-serif;}
-         p        { font-size: 12pt; text-align: justify; font-family: arial, sans-serif;  }
-         
-         img#myPhoto { /* con # afectamos sólo al elemento con el  id="myPhoto"*/
-                         display: block;
-                         margin-left: auto;
-                         margin-right: auto; 
-                        }
-                        
-        .centerText{ text-align: center;}                           
-        
-        .showMyBox{ 
-            
-           /*       border-style: solid; 
-                    border-style: solid;
-                    border-width: thin;
-                    border-color: black;
-           */
-        }         
-        /* Links change their appearance when the user hovers the mouse over them*/
-        a:hover{ font-weight: bold; text-decoration: none}
-        
-        meter.skills { 
-            width: 90%;  
-        }
-
-        div.flex-container {
-            display: -webkit-flex;
-            display: flex;
-            width: 80%;
-            margin-left: 10%;
-
-        }
-
-        p.flex-item {
-            background-color: rgba(0, 0, 0, 0); /*transparente*/
-            width: 100%;
-        }
-
-        /* background color change depending if the page is show in any media, or 
-           on a printed page */
-        @media all
-        {
-            /*body  { background-color: #cccccc; }*/                       
-            body{
-                background: -webkit-radial-gradient(top right,  #808080, white);
-                background: -moz-radial-gradient(top right,  #808080, white);
-                background: radial-gradient(top right,  #808080, white);
-            }
-                        
-            p     { font-size: 12pt;
-                    font-family: arial, sans-serif; 
-        } 
-        @media print
-        {
-            body  { background-color: white; }
-            p     { font-size: 14pt;
-                    font-family: "times new roman", times, serif; }
-        }      
-      </style>      
+        <!-- CSS3 code -->
+        <link href="myStiles.css" rel="stylesheet">        
     
     </head>
     <body class = "showMyBox">
@@ -79,11 +18,16 @@
                         
             <h1 id="top" class="centerText">CHRISTIAN CAMILO MESA V.</h1>
             <h2 class="centerText"> Acoustic engineer and developer </h2>
+            
             <address class="centerText">
                 <a href = "mailto:ing.cmesa@gmail.com"> ing.cmesa@gmail.com</a>
             </address><br>
-            <img id="myPhoto" class = "showMyBox" src = "myResources/fotoPersonal.JPG" alt = "Retrato Christian Mesa" height="200" width="200" />
-            <time><br>2017-05-11</time> 
+            
+            <figure>
+                <img id="myPhoto" class = "showMyBox" src = "myResources/fotoPersonal.JPG" alt = "Retrato Christian Mesa" height="200" width="200" />
+            </figure>
+           
+            <!-- <time><br>2017-05-11</time> --> 
         </header>
         
 
@@ -136,7 +80,7 @@
         </section>
         
         <section id = "3" class = "showMyBox">             
-            <h2>Computer Skills</h2>
+            <h2>Skills</h2>
 
             <div class="showMyBox flex-container">
                 <p class="flex-item centerText showMyBox"><b>C++ and Qt</b><br>
