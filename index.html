@@ -13,10 +13,26 @@
         <link href="myStiles.css" rel="stylesheet">        
     
     </head>
+    
+    
     <body class = "showMyBox">
-        <header class = "showMyBox"> <!-- header element creates a header for the page -->
-                        
-            <h1 id="top" class="centerText">CHRISTIAN CAMILO MESA V.</h1>
+                
+        
+        <header id="top" class = "showMyBox"> <!-- header element creates a header for the page -->
+           
+            <div id="navbar" >
+                <ul>
+                    <li class="changeBackground"><a href="#top">Home</a></li>
+                    <li class="changeBackground"><a href="#about_christian">About Christian</a></li>
+                    <li class="changeBackground"><a href="#publications_and_jobs">Publications and jobs</a></li>
+                    <li class="changeBackground"><a href="#skills">Skills</a></li>
+                    <li class="changeBackground"><a href = "mailto:ing.cmesa@gmail.com"> Contact me</a></li>
+                </ul>
+            </div>
+            
+            <div><br><br></div>
+                
+            <h1 class="centerText">CHRISTIAN CAMILO MESA V.</h1>
             <h2 class="centerText"> Acoustic engineer and developer </h2>
             
             <address class="centerText">
@@ -26,12 +42,16 @@
             <figure>
                 <img id="myPhoto" class = "showMyBox" src = "myResources/fotoPersonal.JPG" alt = "Retrato Christian Mesa" height="200" width="200" />
             </figure>
+            
            
             <!-- <time><br>2017-05-11</time> --> 
         </header>
-        
 
-        <section id = "1" class = "showMyBox"> <!-- Begin section 1 -->
+         
+
+        <section id = "about_christian" class = "showMyBox"> <!-- Begin section 1 -->
+            
+            <br><br>
             <p>
                 <b>Christian</b> is an independent computer programmer,  specializing 
                 in <a href = "https://www.qt.io/" target="_blank">Qt/C++</a> 
@@ -47,9 +67,10 @@
             </p> 
         </section>
 
-        <section id = "2" class = "showMyBox"> <!-- Begin section 1 -->
+        <section id = "publications_and_jobs" class = "showMyBox"> <!-- Begin section 1 -->
             
-                <h2> Recent Publications and jobs</h2>
+            <br><br>
+                <h2>Publications and jobs</h2>
                 <ul>
                     <li><a href = "http://www.fia2014.cl/" target="_blank">
                             Assessment and noise management in Colombian airports 
@@ -79,7 +100,8 @@
             
         </section>
         
-        <section id = "3" class = "showMyBox">             
+        <section id = "skills" class = "showMyBox">  
+            <br><br>
             <h2>Skills</h2>
 
             <div class="showMyBox flex-container">

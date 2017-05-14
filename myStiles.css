@@ -8,6 +8,55 @@ and open the template in the editor.
     Author     : locomotion
 */
 
+/* Vertical Navigation Bar*/
+
+div#navbar {
+    clear: both;
+    width: 100%;
+}
+div#navbar ul {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+div#navbar li {
+    float: left;
+    border-right:1px solid #bbb;    
+}
+
+div#navbar li:last-child {
+/*    border-right: none;*/
+    float:right;
+}
+
+div#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+div#navbar li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div#navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+    
+/* End Navigation Bar*/
+
 h1       { font-family: tahoma, helvetica, sans-serif;}
 p        { font-size: 12pt; text-align: justify; font-family: arial, sans-serif;  }
 section  {width: 90%; border-top: 1.5px solid black; margin: 15px auto;}
@@ -77,8 +126,33 @@ p.flex-item {
     p     { font-size: 12pt;
             font-family: arial, sans-serif;}
 } 
+
+/* adaptación al tamaño de pantalla*/
+@media screen and (max-width: 900px) {
+    div#navbar ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    div#navbar ul li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    div#navbar ul a {
+        text-align: center;
+        float: none;
+    }
+}
+    
+
+/* formato para impresión (e.g pdf files))*/
 @media print
 {
+    div#navbar{display:none;} /* hide navigation bar*/
     body  { background-color: white; }
     p     { font-size: 14pt;
             font-family: "times new roman", times, serif; }
