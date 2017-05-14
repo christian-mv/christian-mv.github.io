@@ -156,15 +156,7 @@ p.flex-item {
    
 }    
 
-@media screen and (max-width: 100px) {    
-    /*Adaptamos contenedores de los meters*/
-    div.flex-container {
-        display: block;
-        width: 100%;
-        margin-left: 10%;
-    }
-   
-}   
+
 
 /* formato para impresión (e.g pdf files))*/
 @media print
