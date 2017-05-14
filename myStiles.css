@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : May 12, 2017, 8:42:52 PM
-    Author     : locomotion
-*/
+
 
 /* Vertical Navigation Bar*/
 
@@ -128,7 +120,7 @@ p.flex-item {
 } 
 
 /* adaptación al tamaño de pantalla*/
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
     div#navbar ul {
         width: 100%;
         height: auto;
@@ -139,15 +131,30 @@ p.flex-item {
         padding: 15px;
     }
     div.content {margin-left: 0;}
-}
+}*/
 
-@media screen and (max-width: 400px) {
-    div#navbar ul a {
+@media screen and (max-width: 480px) {
+    
+    div#navbar ul {
+        top: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+/*    div#navbar ul a {
         text-align: center;
         float: none;
-    }
-}
+    }*/
     
+    /*Adaptamos contenedores de los meters*/
+    div.flex-container {
+        display: block;
+        width: 100%;
+        margin-left: 10%;
+    }
+   
+}    
 
 /* formato para impresión (e.g pdf files))*/
 @media print
