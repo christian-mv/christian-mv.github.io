@@ -1,7 +1,8 @@
 /* Vertical Navigation Bar*/
 
-div#navbar {
+div#navbar {    
     clear: both;
+    font-size: 18pt;
     width: 100%;
 }
 div#navbar ul {
