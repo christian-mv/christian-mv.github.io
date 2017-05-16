@@ -1,5 +1,3 @@
-
-
 /* Vertical Navigation Bar*/
 
 div#navbar {
@@ -78,6 +76,27 @@ img#myPhoto { /* con # afectamos sólo al elemento con el  id="myPhoto"*/
 /* Links change their appearance when the user hovers the mouse over them*/
 a:hover{ font-weight: bold; text-decoration: none}
 
+
+/* Table*/
+table {
+    /*font-family: arial, sans-serif;*/
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*end table*/
+
+
 meter.skills { 
     width: 90%;  
 }
@@ -111,7 +130,7 @@ p.flex-item {
         /* top rieght gradient*/
         background: -webkit-radial-gradient(top right,  #808080, white);
         background: -moz-radial-gradient(top right,  #808080, white);
-        background: radial-gradient(top right,  #808080, white);
+        /*background: radial-gradient(top right,  #808080, white);*/
 
     }
 
@@ -119,19 +138,7 @@ p.flex-item {
             font-family: arial, sans-serif;}
 } 
 
-/* adaptación al tamaño de pantalla*/
-/*@media screen and (max-width: 900px) {
-    div#navbar ul {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    div#navbar ul li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}*/
+
 
 @media screen and (max-width: 480px) {
     
@@ -155,8 +162,6 @@ p.flex-item {
     }
    
 }    
-
-
 
 /* formato para impresión (e.g pdf files))*/
 @media print
