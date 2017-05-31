@@ -1,5 +1,7 @@
 /* Vertical Navigation Bar*/
 
+.noMargin { margin: 0; }
+
 div#navbar {    
     clear: both;
     font-size: 18pt;
